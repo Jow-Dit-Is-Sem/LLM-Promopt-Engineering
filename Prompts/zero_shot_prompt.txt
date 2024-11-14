@@ -1,0 +1,1 @@
+How many instances of '{}' does the word '{}' contain?
