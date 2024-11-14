@@ -1,1 +1,1 @@
-# LLM-Promopt-Engineering
+# LLM-Prompt-Engineering
