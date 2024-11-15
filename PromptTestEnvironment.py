@@ -47,6 +47,10 @@ class PromptTestEnvironment:
             prompt = file.read()
             if self.prompt_eng_technique == "program-aided":
                 prompt = prompt.format(row[1], list(row[0]))
+            elif self.prompt_eng_technique == "binairy":
+                word_list = list(row[0])
+                binary_list = [1 if letter == row[1] else 0 for letter in word_list]
+                prompt = prompt.format(row[1], row[0], binary_list)
             else:
                 prompt = prompt.format(row[1], row[0])
         return prompt
