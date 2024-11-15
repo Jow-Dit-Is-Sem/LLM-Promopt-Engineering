@@ -1,1 +1,5 @@
-Let's count how many instances of 'e' the word 'deified' contains. First all of the letters in the word are seperated: 'd e i f i e d'. Then each of the seperate letters are compared to the letter 'e'. During this process it will be noticed the letter 'e' is matched two times. This considered, how many instances of '{}' does the word '{}' contain?
+Let's count how many instances of 'e' the word 'deified' contains.
+First all of the letters in the word are seperated: 'd e i f i e d'.
+Then each of the seperate letters are compared to the letter 'e'.
+During this process it will be noticed the letter 'e' is matched two times.
+This considered, how many instances of '{}' does the word '{}' contain?

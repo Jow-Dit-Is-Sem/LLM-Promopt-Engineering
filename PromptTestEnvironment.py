@@ -47,7 +47,7 @@ class PromptTestEnvironment:
             prompt = file.read()
             if self.prompt_eng_technique == "program-aided":
                 prompt = prompt.format(row[1], list(row[0]))
-            elif self.prompt_eng_technique == "binairy":
+            elif self.prompt_eng_technique == "binary":
                 word_list = list(row[0])
                 binary_list = [1 if letter == row[1] else 0 for letter in word_list]
                 prompt = prompt.format(row[1], row[0], binary_list)
@@ -63,9 +63,9 @@ class PromptTestEnvironment:
             for row in reader:
                 n_words += 1
                 prompt = self.get_prompt(row)
-                print(prompt)
+                print(f"---Prompt {n_words}---\n{prompt}")
                 model_response = self.prompt_model(prompt)
-                print(model_response)
+                print(f"--Response {n_words}--\n{model_response}")
                 model_response = model_response.split()
                 model_response = self.pre_process_response(model_response)
                 if self.is_solution(model_response, row[0], row[1]):

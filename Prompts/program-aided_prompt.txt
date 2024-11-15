@@ -1,1 +1,6 @@
-Let's count how many instances of 'e' the word 'deified' contains. The solution is obtained by leveraging Python code. Consider the word as a list of chars: list = ['d', 'e', 'i', 'f', 'i', 'e', 'd']. Then list.count() is applied for the provided letter: list.count('e'). This will yield list.count('e') = 2. This considered, how many instances of '{}' does the list of letters {} contain?
+Let's count how many instances of 'e' the word 'deified' contains.
+The solution is obtained by leveraging Python code.
+Consider the word as a list of chars: list = ['d', 'e', 'i', 'f', 'i', 'e', 'd'].
+Then list.count() is applied for the provided letter: list.count('e').
+This will yield list.count('e') = 2.
+This considered, how many instances of '{}' does the list of letters {} contain?
